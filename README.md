@@ -10,3 +10,4 @@
 - Run order:
   1. stat_index.sh
   2. cutadapt_PE.sh
+  3. run_mixcr.sh
