@@ -17,10 +17,11 @@ output="$output.indexSeq"
 
 # parse all index sequences and counts
 grep "@" ${input} | cut -d ":" -f10 | sort | uniq -c | sort -n -r > $output
-N=`sed -n '1,1p' $output | cut -d " " -f2` 
+N=`sed -n '1,1p' $output | cut -d " " -f2`
+index=`sed -n '1,1p' $output | cut -d " " -f3`
 S=`wc -l ${input} | cut -d " " -f1`
 let S=S/4
 R=`echo "scale=4; $N/$S" | bc`
-echo -e "${input}\t$S\t$N\t$R" >> Stat_index.txt 
+echo -e "${input}\t$S\t$index\t$N\t$R" >> stat_index.txt 
 
 done
