@@ -25,3 +25,5 @@ R=`echo "scale=4; $N/$S" | bc`
 echo -e "${input}\t$S\t$index\t$N\t$R" >> stat_index.txt 
 
 done
+mkdir indexSeq
+mv ./*.indexSeq ./indexSeq
