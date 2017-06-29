@@ -70,6 +70,6 @@ done
 mkdir mixcr_align
 mkdir mixcr_assemble
 mkdir mixcr_clones
-mv ./*_alignment* ./mixcr_align
-mv ./*_assemble* ./mixcr_assemble
-mv ./*_clones.* ./mixcr_clones
+mv ./alignment* ./mixcr_align
+mv ./assembleReport_*.log ./mixcr_assemble
+mv ./clones* ./mixcr_clones
