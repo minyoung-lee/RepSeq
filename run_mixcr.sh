@@ -16,7 +16,7 @@ do
 # display the processing file name
 echo $input
 
-# find 
+# which gene 
 gene=`echo $input | cut -d "_" -f2` 
 gene=`expr substr $gene 1 4`
 flag_TCRb=`expr $gene == "TCRb"`
