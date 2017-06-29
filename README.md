@@ -8,5 +8,5 @@
 - Paired-end, 150nt
 - Dependent: cutadapt, MiXCR
 - Run order:
-⋅⋅1. stat_index.sh
-⋅⋅2. cutadapt_PE.sh
+  1. stat_index.sh
+  2. cutadapt_PE.sh
