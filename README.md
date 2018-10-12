@@ -6,8 +6,8 @@
 - Illumina NextSeq500
 - Dual-indexed library 
 - Paired-end, 150nt
-- Dependent: cutadapt, MiXCR
-- Run order:
+- Dependencies: cutadapt, MiXCR
+- Analysis step:
   1. stat_index.sh
   2. stat_readLength.sh
   3. cutadapt_PE.sh
